@@ -1,120 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0A0A0A"/>
   <title>Fables — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the Fables app by D Iris Dev Studios."/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet"/>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap');
-
+    :root {
+      --bg: #0A0A0A;
+      --surface: #201f1f;
+      --surface-high: #2a2a2a;
+      --text: #e5e2e1;
+      --muted: #d0c5af;
+      --gold: #f2ca50;
+      --gold-deep: #d4af37;
+      --outline: rgba(212, 175, 55, 0.15);
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
+    html { scroll-behavior: smooth; }
     body {
-      background: #050a0f;
-      color: #c8e6ff;
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 14px;
-      line-height: 1.8;
-      padding: 2em;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
     }
+    a { color: var(--gold); text-decoration: none; border-bottom: 1px solid rgba(242, 202, 80, 0.25); }
+    a:hover { border-bottom-color: var(--gold); }
 
-    .container {
-      max-width: 820px;
-      margin: 0 auto;
-      border: 1px solid #0ff3;
-      padding: 2.5em;
-      background: #080f18;
-      box-shadow: 0 0 40px #00ffe01a, inset 0 0 40px #00000080;
+    /* Top bar */
+    .nav {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px; padding: 0 1.25rem;
+      background: rgba(10, 10, 10, 0.8);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 1px 0 0 rgba(212, 175, 55, 0.1);
     }
-
-    .header {
-      text-align: center;
-      margin-bottom: 2.5em;
-      padding-bottom: 1.5em;
-      border-bottom: 1px solid #0ff4;
+    .nav .brand {
+      font-family: 'Playfair Display', serif; font-weight: 700;
+      font-size: 1.6rem; color: var(--gold); letter-spacing: -0.02em; border: none;
     }
+    .nav .home {
+      font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--muted); border: none;
+    }
+    .nav .home:hover { color: var(--gold); }
 
+    .container { max-width: 820px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+
+    .header { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--outline); }
     .app-name {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.2em;
-      font-weight: 700;
-      color: #00ffe0;
-      letter-spacing: 0.15em;
-      text-shadow: 0 0 20px #00ffe088;
+      font-family: 'Playfair Display', serif; font-weight: 700; font-style: italic;
+      font-size: 3rem; color: var(--gold); letter-spacing: -0.02em; line-height: 1.1;
     }
-
     .subtitle {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 0.75em;
-      color: #0ff8;
-      letter-spacing: 0.3em;
-      margin-top: 0.4em;
+      font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3em;
+      color: var(--muted); margin-top: 0.75rem;
     }
-
-    .effective {
-      font-size: 0.75em;
-      color: #0ff6;
-      margin-top: 0.6em;
-    }
+    .effective { font-size: 0.8rem; color: rgba(208, 197, 175, 0.7); margin-top: 0.5rem; }
 
     h2 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 0.85em;
-      color: #00ffe0;
-      letter-spacing: 0.2em;
-      margin: 2em 0 0.8em;
-      padding-left: 0.8em;
-      border-left: 3px solid #00ffe0;
-      text-shadow: 0 0 10px #00ffe055;
+      font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700;
+      color: var(--gold); text-transform: uppercase; letter-spacing: 0.18em;
+      margin: 2.5rem 0 0.85rem; padding-left: 0.8rem; border-left: 3px solid var(--gold);
     }
-
-    p { margin-bottom: 0.8em; color: #a8d4f0; }
-
-    ul {
-      margin: 0.5em 0 0.8em 1.5em;
-      color: #a8d4f0;
-    }
-
-    ul li { margin-bottom: 0.3em; }
-    ul li::marker { color: #00ffe0; }
-
-    a {
-      color: #00ffe0;
-      text-decoration: none;
-      border-bottom: 1px solid #00ffe044;
-    }
-    a:hover { border-bottom-color: #00ffe0; text-shadow: 0 0 8px #00ffe0; }
-
+    p { margin-bottom: 0.85rem; color: var(--muted); }
     .section {
-      margin-bottom: 1.5em;
-      padding: 1.2em;
-      background: #0a1520;
-      border: 1px solid #0ff2;
+      margin-bottom: 1.25rem; padding: 1.5rem;
+      background: var(--surface); border: 1px solid var(--outline); border-radius: 0.5rem;
     }
+    ul { margin: 0.5rem 0 0.85rem 1.5rem; color: var(--muted); }
+    li { margin-bottom: 0.35rem; }
+    li::marker { color: var(--gold); }
+    strong { color: var(--text); }
+    em { color: var(--gold); font-style: italic; }
 
     .footer {
-      margin-top: 2.5em;
-      padding-top: 1.5em;
-      border-top: 1px solid #0ff3;
-      text-align: center;
-      font-size: 0.75em;
-      color: #0ff5;
-    }
-
-    .scanline {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      pointer-events: none;
-      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,224,0.015) 2px, rgba(0,255,224,0.015) 4px);
-      z-index: 999;
+      margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--outline);
+      text-align: center; font-size: 0.8rem; letter-spacing: 0.1em;
+      color: rgba(208, 197, 175, 0.6);
     }
   </style>
 </head>
 <body>
-<div class="scanline"></div>
+<nav class="nav">
+  <a class="brand" href="https://tryfables.com/">Fables</a>
+  <a class="home" href="https://tryfables.com/">← Home</a>
+</nav>
 <div class="container">
   <div class="header">
-    <div class="app-name">FABLES</div>
-    <div class="subtitle">PRIVACY POLICY</div>
+    <div class="app-name">Fables</div>
+    <div class="subtitle">Privacy Policy</div>
     <div class="effective">EFFECTIVE DATE: 2026-05-30</div>
   </div>
 
@@ -122,7 +103,7 @@
     <p>This privacy policy applies to the Fables app (hereby referred to as "Application") for mobile devices that was created by D Iris Dev Studios (hereby referred to as "Service Provider") as a Freemium service. This service is intended for use "AS IS".</p>
   </div>
 
-  <h2>INFORMATION COLLECTION AND USE</h2>
+  <h2>Information Collection and Use</h2>
   <div class="section">
     <p>The Application collects information when you download and use it. This information may include:</p>
     <ul>
@@ -135,7 +116,7 @@
     <p>For a better experience, while using the Application, the Service Provider may require you to provide certain personally identifiable information, including but not limited to Email and userId.</p>
   </div>
 
-  <h2>THIRD PARTY ACCESS</h2>
+  <h2>Third Party Access</h2>
   <div class="section">
     <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application. The Application utilizes third-party services that have their own Privacy Policy:</p>
     <ul>
@@ -147,39 +128,39 @@
     </ul>
   </div>
 
-  <h2>OPT-OUT RIGHTS</h2>
+  <h2>Opt-Out Rights</h2>
   <div class="section">
     <p>You can stop all collection of information by the Application easily by uninstalling it using the standard uninstall processes available on your mobile device or via the mobile application marketplace.</p>
   </div>
 
-  <h2>DATA RETENTION POLICY</h2>
+  <h2>Data Retention Policy</h2>
   <div class="section">
     <p>The Service Provider retains User Provided data for as long as you use the Application. When you delete your account (see <a href="#delete-account">Account Deletion</a> below), all your personal data is permanently removed from our servers within 24 hours. You can also request deletion at any time by contacting <a href="mailto:privacy@tryfables.com">privacy@tryfables.com</a>.</p>
   </div>
 
-  <h2>CHILDREN</h2>
+  <h2>Children</h2>
   <div class="section">
     <p>The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13. If you discover that a child has provided personal information, please contact <a href="mailto:privacy@tryfables.com">privacy@tryfables.com</a> immediately.</p>
   </div>
 
-  <h2>SECURITY</h2>
+  <h2>Security</h2>
   <div class="section">
     <p>The Service Provider provides physical, electronic, and procedural safeguards to protect information it processes and maintains.</p>
   </div>
 
-  <h2>CHANGES</h2>
+  <h2>Changes</h2>
   <div class="section">
     <p>This Privacy Policy may be updated from time to time. The Service Provider will notify you of any changes by updating this page. Continued use of the Application is deemed approval of all changes.</p>
   </div>
 
-  <h2>YOUR CONSENT</h2>
+  <h2>Your Consent</h2>
   <div class="section">
     <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy.</p>
   </div>
 
-  <h2 id="delete-account">ACCOUNT DELETION</h2>
+  <h2 id="delete-account">Account Deletion</h2>
   <div class="section">
-    <p><strong style="color:#00ffe0;">How to delete your Fables account and data:</strong></p>
+    <p><strong style="color:var(--gold);">How to delete your Fables account and data:</strong></p>
     <ul>
       <li><strong>In-app (recommended):</strong> Open Fables → Settings → scroll to <em>Danger Zone</em> → tap <em>Delete account</em>. You will be asked to confirm your password. Local app data on your device is wiped immediately. All personal data stored on our servers is then automatically and permanently removed within 24 hours via a server-side cascade — no further action is needed from you.</li>
       <li><strong>By email:</strong> If you cannot access the app, send a deletion request to <a href="mailto:privacy@tryfables.com">privacy@tryfables.com</a> with the subject line <em>"Account Deletion Request"</em> and include the email address associated with your account. We will process your request within 7 days.</li>
@@ -201,7 +182,7 @@
     <p><strong>What may be retained:</strong> Aggregated, anonymized analytics data that cannot be linked back to you may be retained for service improvement purposes. Crash diagnostics submitted to Firebase Crashlytics are subject to <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google's own retention policy</a>.</p>
   </div>
 
-  <h2>CONTACT</h2>
+  <h2>Contact</h2>
   <div class="section">
     <p>If you have any questions regarding privacy, contact the Service Provider at <a href="mailto:privacy@tryfables.com">privacy@tryfables.com</a>.</p>
   </div>
